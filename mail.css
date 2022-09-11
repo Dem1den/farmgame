@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    font-size: 50px;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+section {
+    padding-top: 120px;
+}
+
+header {
+    padding-top: 60px;
+}
+
+.logo {
+    margin: 0 auto;
+    max-width: 182px;
+    height: 30px;
+}
+
+
+.cow {
+    width: 465px;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700px;
+    line-height: 1.4em;
+    margin: 0;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.intro {
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+p {
+    line-height: 25px;
+    margin: 0;
+
+}
+
+
+.button {
+    background: #FF6861;
+    border-radius: 100px;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 22px 70px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.button:hover{
+    background: rgd(41,41,41);
+}
+
+.offer {
+    width: 465px;
+    margin-right: 176px;
+
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 82px;
+}
+
+.features-container {
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    margin: 0 auto;
+}
+
+.feature {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+}
+
+.features-wrap {
+    display: flex;
+    display: flex;
+
+}
+
+.feature-digit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 73px;
+    height: 73px;
+    transition: all 0.5s ease;
+
+}
+
+
+.feature:hover .feature-digit{
+    background: #c93737;
+    color: #FFFFFF;
+}
+
+.feature-title {
+    font-size: 30px;
+}
+
+.feature-text {
+    font-size: 18px;
+    margin-bottom: 11px;
+}
+
+.action-wrap {
+    background: linear-gradient(102deg, #FFF6DF 17.38%, #FFDFDE 81.25%);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    padding: 76px 125px 75px 122px;
+    gap: 101px;
+    justify-content: center;
+    height: 486px;
+    flex-direction: column;
+}
+
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.action-wrap .cowend{
+    animation: 5s linear 0s normal none infinite running rot
+}
+
+.hero-text {
+    width: 475px;
+}
+
+.hero-text h2 {
+    text-align: left;
+    margin: 0;
+}
+
+.hero-text .intro {
+    margin: 24px 0;
+    width: 371px;
+}
+
+.credits {
+    font-size: 15px;
+    text-align: center;
+}
+
+.footer {
+    padding: 120px 0;
+}
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px){
+    .container{
+        max-width: 720px;
+    }
+    .logo{
+        display: flex;
+    }
+    .wrapper{
+        flex-direction: column-reverse;
+        text-align: center;
+        display: flex;
+        gap: 51px ;
+    }
+    .offer{
+        margin: 0;
+        width: 720px;
+    }
+    .intro {
+        flex-wrap: nowrap;
+    }
+    .feature{
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        width: 320px;
+        margin: 24px auto;
+    }
+    .action-wrap{
+        height: auto;
+    }
+    .hero-text{
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* Small: 567px - 767px */
+@media (max-width: 767px){
+    .container{
+        max-width: 540px;
+    }
+    .offer{
+        width: 567px;
+    }
+    .features-container{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: auto;}
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px){
+    .container{
+        padding: 0 15px;
+    }
+    .logo{
+        align-items: center;
+    }
+    .cow{
+        width: 100%;
+        display: block;
+    }
+    .offer{
+        width: auto;
+    }
+    h1{
+        font-size: 45px;
+    }
+    .cowend{
+        width: 201px;
+    }
+    .action-wrap{
+        padding: 70px 20px;
+    }
+    .action-wrap .hero-text{
+        width: auto;
+    }
+    .action-wrap .intra{
+        font-size: 40px;
+        text-align: center;
+    }
+    .action-wrap .intro{
+        width: auto;
+    }
+    section{
+        padding-top: 90px;
+    }
+    .footer{
+        padding-top: 90px 0;
+    }
+    .wrapper{
+        margin-top: 50px;
+    }
+}
